@@ -2,16 +2,16 @@
 A style guide for a mock Bed and Breakfast website.
 I created this style guide as a study in brand design and a place to practice styling reusable web components.
 
-Notes:
-- I plan to convert this to a react app in the near future. As the file grows, this will help with maintainability.
-- This website was built purely for professional development. I recieve no profit from this site. Images and fonts have been sourced freely from Pinterest and dafont.
-- Yes, I am a huge GG fan. Let me know if you'd like to see a style guide for other popular Stars Hollow haunts in the future :)
-
 <hr>
 
-**This project is a work in progress**
+🚨 **This project is a work in progress** 👷🏻‍♀️🚧🚜
 
-to view the live demo, please visit https://dragonfly-inn-styleguide.netlify.app/
+live demo - https://dragonfly-inn-styleguide.netlify.app/
+
+Notes:
+- I plan to convert this to a react app in the near future. As the file grows, this will help with maintainability.
+- This website was built purely for professional development. I recieve no profit from this site. Images and fonts have been sourced freely from Pinterest and daFont.
+- Yes, I am a huge GG fan. Let me know if you'd like to see a style guide for other popular Stars Hollow haunts in the future :)
 
 <hr>
 
