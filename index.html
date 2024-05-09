@@ -4,68 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Stars Hollow Inn</title>
+    <title>The Dragonfly Inn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <h1 class="title">Stars Hollow Inn</h1>
-    <h2>brand identity & styleguide</h2>
-    <div class="styleguide__section">
-      <h2>Colors</h2>
-      <div class="style-block__wrapper">
-        <div class="color-block color-block__whale">
-          <p>whale</p>
-          <p>#104856</p>
+    <header class="hero">
+      <h1 class="title">The Dragonfly Inn</h1>
+      <h2 class="subtitle">brand identity & frontend styleguide</h2>
+    </header>
+
+    <main>
+      <article>
+        <section class="styleguide__section">
+          <h3 class="styleguide__section--title">Color Palette</h3>
+          <div class="style-block__wrapper">
+            <div class="color-block__wrapper" >  
+              <div class="color-block color-block__crisp-linen"></div>
+              <p class="color__name">crisp linen</p>
+              <p class="color__hex">#EDD5C0</p>
+            </div>
+            <div class="color-block__wrapper">
+              <div class="color-block color-block__eucalyptus"></div>
+              <p class="color__name">eucalyptus</p>
+              <p class="color__hex">#92ADA4</p>
+            </div>
+            <div class="color-block__wrapper">
+              <div class="color-block color-block__lemonade"> </div>
+              <p class="color__name">lemonade</p>
+              <p class="color__hex">#F1A805</p>
+            </div>
+            <div class="color-block__wrapper">
+              <div class="color-block color-block__limoncello"></div>
+              <p class="color__name">limoncello</p>
+              <p class="color__hex">#F2D6A1</p>
+            </div>
+            <div class="color-block__wrapper">
+              <div class="color-block color-block__swimming-pool"></div>
+              <p class="color__name">swimming pool</p>
+              <p class="color__hex">#B3D9E0</p>
+            </div>
+          </div>
+        </section>
+        <section class="styleguide__section">
+          <h3 class="styleguide__section--title">Assets</h3>
+          <div class="logos__wrapper">
+            <img class="logo" src="ct-logo.svg" alt="Dragonfly graphic wih letter CT" />
+            <div class="detail-logo__block">
+              <img class="logo" src="logo.svg" alt="Dragonfly graphic with the text: Dragonfly Inn Stars Hollow, CT" />
+              <img class="logo" src="logo-black.svg" alt="Dragonfly graphic with the text: Dragonfly Inn Stars Hollow, CT" />
+            </div>
+          </div>
+        </section>
+        <section class="styleguide__section section--fonts">
+          <h3 class="styleguide__section--title">Typography</h3>
+          <div class="fonts-block__wrapper">
+            <div class="fonts-block">
+              <h4 class="sage">Headings</h4>
+              <p class="sage">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+              <p class="sage">abcdefghijklmnopqrstuvwxyz</p>
+              <p class="sage">0123456789</p>
+            </div>
+            <div class="fonts-block">
+              <h4 class="collingar">Subheadings</h4>
+              <p class="collingar">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+              <p class="collingar">abcdefghijklmnopqrstuvwxyz</p>
+              <p class="collingar">0123456789</p>
+            </div>
+
+            <div class="fonts-block">
+              <h4 class="oswald">Body Copy</h4>
+              <p class="oswald">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+              <p class="oswald">abcdefghijklmnopqrstuvwxyz </p>
+              <p class="oswald">0123456789</p>
+            </div>
+          </div>
+        </section>
+        <section class="styleguide__section">
+          <h3 class="styleguide__section--title">Base</h3>
+        </section>
+        <section class="styleguide__section">
+          <h3 class="styleguide__section--title">Common Components</h3>
+        </section>
+      </article>
+      <aside class="styleguide__section">
+        <h3 class="styleguide__section--title">Inspiration</h3>
+        <div class="inspiration__grid">
+          <img class="inspiration__photo-1" src="./images/dining.jpeg"/>
+          <img class="inspiration__photo-2" src="./images/kitchen.jpeg" />
+          <img class="inspiration__photo-3" src="./images/porch.jpeg"/>
+          <img class="inspiration__photo-4" src="./images/powder-room.jpeg"/>
+          <img class="inspiration__photo-5" src="./images/sitting-room.jpeg"/>
+          <img class="inspiration__photo-6" src="./images/stairway.jpeg"/>
+          <img class="inspiration__photo-7" src="./images/pool.jpeg"/>
+          <img class="inspiration__photo-8" src="./images/lodging.jpeg"/>
         </div>
-        <div class="color-block color-block__deep-orange">
-          <p>deep orange</p>
-          <p>#b85706</p>
-        </div>
-        <div class="color-block color-block__sand">
-          <p>sand</p>
-          <p>#d1ab95</p>
-        </div>
-        <div class="color-block color-block__amber">
-          <p>amber</p>
-          <p>#9f5e44</p>
-        </div>
-        <div class="color-block color-block__ruby">
-          <p>ruby</p>
-          <p>#860503</p>
-        </div>
-      </div>
-    </div>
-    <div class="styleguide__section">
-      <h2>Logos</h2>
-      <img class="logo" src="logo.svg" alt="constellation with flowers where the stars would be and the year 2023" />
-    </div>
-    <div class="styleguide__section">
-      <h2>Fonts</h2>
-      <div class="style-block__wrapper">
-        <div class="astar font-block__wrapper">
-          <h3><u>A Star Regular</u></h3>
-          <p>The quick brown fox jumps over the lazy dog</p>
-          <p class="bold">The quick brown fox jumps over the lazy dog</p>
-          <p class="italic">The quick brown fox jumps over the lazy dog</p>
-        </div>
-        <div class="collingar font-block__wrapper">
-          <h3><u>Collingar</u></h3>
-          <p>The quick brown fox jumps over the lazy dog.</p>
-          <p class="bold">The quick brown fox jumps over the lazy dog.</p>
-          <p class="italic">The quick brown fox jumps over the lazy dog.</p>
-        </div>
-        <div class="monday font-block__wrapper">
-          <h3><u>Monday Sans</u></h3>
-          <p>The quick brown fox jumps over the lazy dog.</p>
-          <p class="bold">The quick brown fox jumps over the lazy dog.</p>
-          <p class="italic">The quick brown fox jumps over the lazy dog.</p>
-        </div>
-      </div>
-    </div>
-    <div class="styleguide__section">
-      <h2>Text Styles</h2>
-    </div>
+      </aside>
+    </main>
 	<script src="index.js"></script>
   </body>
 
