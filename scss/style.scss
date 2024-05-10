@@ -27,6 +27,23 @@ $sage: 'Sage', Times, 'Times New Roman', serif;
 $collingar: 'Collingar', Times, 'Times New Roman', serif;
 $oswald: 'Oswald', Arial, sans-serif;
 
+/*  =========================================
+    MIX-INS
+============================================= */
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: 641px) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: 1008px) {
+        @content;
+    }
+ }
 
 /*  =========================================
     BASIC COMPONENT STYLES
@@ -41,7 +58,10 @@ body {
 }
 
 main {
-    display: flex;
+
+    @include lg {
+        display: flex;
+    }
 }
 
 .footer {
@@ -53,17 +73,26 @@ main {
 
 h1 {
     font-family: $sage;
-    font-size: 50pt;
+    font-size: 27pt;
     font-weight: 400;
     margin-block: unset;
+
+    @include lg {
+        font-size: 50pt;
+    }
 }
 
 h2 {
     font-family: $collingar;
-    font-size: 16pt;
     text-transform: uppercase;
+    font-size: 10pt;
     margin: 0.875rem 0;
     font-weight: 300;
+    
+    @include lg {
+        font-size: 16pt;
+
+    }
 }
 
 h3 {
@@ -93,11 +122,13 @@ p {
 .title {
     margin-top: 2rem;
     color: $white;
+    text-align: center;
 }
 
 .subtitle {
     margin-top: 0;
     letter-spacing: 0.1875rem;
+    text-align: center;
 
 }
 
@@ -131,13 +162,17 @@ h4.oswald, p.oswald {
 
 .hero {
     background-color: $eucalyptus;
-    height: 15rem;
     width: 100vw;
+    height: 9.375rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
     letter-spacing: 0.25rem;
+    
+    @include lg {
+        height: 15rem;
+    }
 }
 
 .styleguide__section {
@@ -208,6 +243,7 @@ h4.oswald, p.oswald {
 
 .style-block__wrapper {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-left: -0.625rem;
 }
@@ -220,8 +256,11 @@ h4.oswald, p.oswald {
 }
 
 .fonts-block__wrapper {
-    display: inline-flex;
     margin-top: 2rem;
+
+    @include lg {
+        display: inline-flex;
+    }
 }
 
 .fonts-block {
@@ -234,20 +273,36 @@ h4.oswald, p.oswald {
 }
 
 .logo {
-    height: 10rem;
-    width: auto;
+    width: 50%;
+    display: flex;
+
+    @include lg {
+        height: 10rem;
+        width: auto;
+        margin: auto;
+    }
+
 }
 
 .logos__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
+    margin: 0 2rem;
+    
+    @include lg {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+        
 }
 
 .detail-logo__block {
     display: flex;
-    flex-flow: column;
+    
+    @include lg {
+        flex-flow: column;        
+    }
 }
 
 .inspiration__grid {
